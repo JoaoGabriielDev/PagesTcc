@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .denuncia-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  form select,
+  form input[type="date"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  .denunciar-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Para que o botão ocupe toda a largura disponível */
+  }
+  
+  .denunciar-button:hover {
+    background-color: #cc0000;
+  }
+
+  form textarea#descricao {
+    width: 95%; /* ou outro valor desejado */
+  }
+
+  form input#cep {
+    width: 93%;
+  }
+  
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .half {
+    width: calc(50% - 10px); /* Divide o espaço pela metade e desconta o espaçamento entre os campos */
+    margin-right: 10px; /* Adiciona espaçamento entre as metades */
+  }

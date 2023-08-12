@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denunciar</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="denuncia-form">
+    <h2>Realize a sua Denúncia</h2>
+    <form>
+      <div class="form-row">
+        <div class="half">
+          <label for="bairro">Bairro:</label>
+          <select id="bairro" name="bairro">
+            <option value="bairro1">Bairro 1</option>
+            <option value="bairro2">Bairro 2</option>
+            <option value="bairro3">Bairro 3</option>
+          </select>
+        </div>
+        <div class="half">
+          <label for="data">Data:</label>
+          <input type="date" id="data" name="data" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="half">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+        <div class="half">
+          <label for="tipo">Tipo:</label>
+          <select id="tipo" name="tipo">
+            <option value="tipo1">Tipo 1</option>
+            <option value="tipo2">Tipo 2</option>
+            <option value="tipo3">Tipo 3</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="descricao">Descreva a Denúncia:</label>
+      <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+      <button type="submit" class="denunciar-button">Denunciar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
